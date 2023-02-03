@@ -44,9 +44,23 @@ class Umpire {
 
     void compare() {
         if (numFromPlayer1 == numFromGuesser) {
-            System.out.println("Player 1 won ");
+            if (numFromGuesser == numFromPlayer2 && numFromGuesser == numFromPlayer3) {
+                System.out.println("Everyone won");
+            } else if (numFromGuesser == numFromPlayer2)
+                System.out.println("Player 1 and Player 2 won ");
+
+            else if (numFromGuesser == numFromPlayer3) {
+                System.out.println("Player 1 and Player 3 won");
+            } else {
+                System.out.println("Player 1 won");
+            }
         } else if (numFromPlayer2 == numFromGuesser) {
-            System.out.println("Player 2 won ");
+            if (numFromGuesser == numFromPlayer3) {
+                System.out.println("Player 2 and Player 3 won");
+            } else {
+
+                System.out.println("Player 2 won ");
+            }
         } else if (numFromPlayer3 == numFromGuesser) {
             System.out.println("Player 3 won ");
         } else {
