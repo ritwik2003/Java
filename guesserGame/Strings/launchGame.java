@@ -1,4 +1,6 @@
-import java.util.Scanner;
+package Strings;
+
+import java.util.*;
 
 class Guesser {
     int guessNum;
