@@ -11,13 +11,28 @@ public class stringReverse {
         // System.out.println("string after reversing : " + rev);
 
         // case 2
+        // String s = "Ritwik Jain";
+        // String rev = "";
+        // String arr[] = s.split(" ");
+        // for (int i = arr.length - 1; i >= 0; i--) {
+        // rev = rev + arr[i] + " ";
+        // }
+        // System.out.println("string before reversing : " + s);
+        // System.out.println("string after reversing : " + rev);
+
+        // case 3
         String s = "Ritwik Jain";
         String rev = "";
         String arr[] = s.split(" ");
-        for (int i = arr.length - 1; i >= 0; i--) {
-            rev = rev + arr[i] + " ";
+
+        for (String str : arr) {
+            for (int i = str.length() - 1; i >= 0; i--) {
+                rev = rev + str.charAt(i);
+            }
+            rev = rev + " ";
         }
         System.out.println("string before reversing : " + s);
         System.out.println("string after reversing : " + rev);
+
     }
 }
